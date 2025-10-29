@@ -37,6 +37,8 @@ model Movie {
   userId      Int
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  budget      String?
+  location    String?
 }
 
 model TVShow {
@@ -51,4 +53,6 @@ model TVShow {
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   imgUrl      String
+  budget      String?
+  location    String?
 }
